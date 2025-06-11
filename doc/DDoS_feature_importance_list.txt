@@ -1,0 +1,32 @@
+                 Feature  Importance
+       Fwd Header Length   25.687350
+         Avg Packet Size   13.802356
+            Flow Bytes/s   10.970134
+       Packet Length Max    8.635969
+Fwd Packets Length Total    8.300481
+            Flow IAT Min    6.804943
+       Packet Length Min    4.837694
+           Fwd Packets/s    3.133830
+           Flow Duration    2.856201
+             Fwd IAT Min    2.837523
+    Avg Fwd Segment Size    1.975127
+           Fwd IAT Total    1.690503
+            Flow IAT Max    1.490948
+      Init Fwd Win Bytes    1.060752
+          Flow Packets/s    1.030202
+   Fwd Packet Length Max    0.805891
+             Fwd IAT Max    0.666943
+             Bwd IAT Max    0.451038
+           Bwd Packets/s    0.439899
+   Fwd Packet Length Min    0.380507
+          URG Flag Count    0.363556
+  Fwd Packet Length Mean    0.354718
+      Init Bwd Win Bytes    0.325169
+     Subflow Fwd Packets    0.244700
+           Down/Up Ratio    0.233295
+    Fwd Act Data Packets    0.182650
+  Bwd Packet Length Mean    0.163774
+           Bwd IAT Total    0.147632
+          ACK Flag Count    0.092994
+       Bwd Header Length    0.033221
+   Bwd Packet Length Min    0.000000
