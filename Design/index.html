@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Security Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Network Security Monitor</h1>
+            <p class="subtitle">Real-time DDoS & Intrusion Detection</p>
+        </header>
+
+        <div class="control-panel">
+            <div class="status-container">
+                <div class="status-indicator" id="api-status">
+                    <span class="status-dot offline"></span>
+                    <span class="status-text">Prediction API: Offline</span>
+                </div>
+                <div class="status-indicator" id="capture-status">
+                    <span class="status-dot offline"></span>
+                    <span class="status-text">Packet Capture: Offline</span>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button id="start-btn" class="btn primary">
+                    <span class="btn-icon">▶</span>
+                    Start Monitoring
+                </button>
+                <button id="stop-btn" class="btn danger" disabled>
+                    <span class="btn-icon">⏹</span>
+                    Stop
+                </button>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <div class="card">
+                <div class="card-header">
+                    <h2>🛡️ DDoS Detection</h2>
+                </div>
+                <div class="card-content">
+                    <div class="detection-status" id="ddos-status">No data</div>
+                    <div class="last-detection" id="ddos-timestamp"></div>
+                    <div class="alert-box" id="ddos-alert"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>🔍 Intrusion Detection</h2>
+                </div>
+                <div class="card-content">
+                    <div class="detection-status" id="ids-status">No data</div>
+                    <div class="last-detection" id="ids-timestamp"></div>
+                    <div class="alert-box" id="ids-alert"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="log-container">
+            <div class="log-header">
+                <h2>📊 Event Log</h2>
+                <button id="clear-log-btn" class="btn-small">Clear</button>
+            </div>
+            <div class="log-box" id="event-log"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
